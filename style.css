@@ -138,15 +138,26 @@ margin-bottom: 20px;
 }
 
 #experiance-badge{
+padding:45px 42px ;
+font-size: 1.5rem;
+font-weight: 500;
+margin-left: -100px;
+margin-top: -100px;
 
 }
 #experiance-year{
-    
+    font-size: 4rem;
+    font-weight: 700;
+}
+.featured-architect img
+{
+    width: 100%;
 }
 
 
 
-/* Some fact related Styles */
+
+/* ...Some fact related Styles */
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -213,7 +224,7 @@ margin-bottom: 20px;
 /*........................... Responsive Meadia Query For Mobile.. */
 @media screen and (max-width:576px){
 
-.navbar , .navlinks , .teams
+.navbar , .navlinks , .teams, .features
 {
     flex-direction: column;
 }
@@ -237,7 +248,9 @@ justify-items: center;
     gap: 34px;
     justify-items: center;  
 }
-
+#experiance-badge{
+    display: none;
+}
 
 
 
@@ -245,7 +258,7 @@ justify-items: center;
 }
 /*......................... Responsive Meadia Query For Medium Device */
 @media screen and (min-width:576px) and (max-width:996px){
-    .teams , .facts-container{
+    .teams , .facts-container , .features{
       flex-direction: column;  
     }
     .our-features{
@@ -260,5 +273,8 @@ justify-items: center;
         grid-template-columns: repeat(2,1fr)  ;
         gap: 24px;
         justify-items: center;
+}
+#experiance-badge{
+    margin-left: 20px;
 }
 }
